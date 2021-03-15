@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mobile first */
+.element {
+    margin: 0 10;
+    transform: translate3d(0, 0, 0);
+    z-index: 50;
+    display: block;
+ }
+ 
+ @media only screen and (body:480px) {
+   .code {
+     all: none;
+     font-size: small;
+     grid-column: auto;
+   }
+
+   @media screen and (max-width: 992px) {
+    .code-card {
+      flex: 50%;
+      font: large;
+      grid-row: inherit;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .code-card {
+      flex-direction: column;
+      width: 100%;
+      font-size: medium;
+      grid-column: auto;
+    }
+  }
+ 
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+​h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+​input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+​ol,
+ul {
+  list-style: none;
+  }
